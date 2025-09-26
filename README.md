@@ -1,1 +1,1 @@
-# Change branch to master o view the project
+# Change branch to master to view the project
