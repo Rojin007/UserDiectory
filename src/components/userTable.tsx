@@ -45,7 +45,7 @@ const UserTable: React.FC<UserTableProps> = ({ users }) => {
       </div>
 
       <div className="overflow-x-auto">
-        <table className="min-w-full bg-white border border-gray-200 shadow-md rounded">
+        <table className="min-w-full bg-blue-100 border border-gray-200 shadow-md rounded">
           <thead>
             <tr className="bg-gray-100 text-left text-sm font-semibold text-gray-700">
               <th
@@ -71,15 +71,15 @@ const UserTable: React.FC<UserTableProps> = ({ users }) => {
                 key={user.id}
                 className="border-t border-gray-200 hover:bg-gray-50 text-sm"
               >
-                <td className="px-4 py-2 text-blue-600 underline">
+                <td className="px-4 py-2 text-blue-500 underline hover:text-blue-800 transition-colors mb-6">
                   <Link to={`/user/${user.id}`} state={{ user }}>
                     {user.name}
                   </Link>
                 </td>
-                <td className="px-4 py-2">{user.username}</td>
-                <td className="px-4 py-2">{user.email}</td>
-                <td className="px-4 py-2">{user.address.city}</td>
-                <td className="px-4 py-2">{user.company.name}</td>
+                <td className="px-4 py-2 text-blue-500">{user.username}</td>
+                <td className="px-4 py-2 text-blue-500">{user.email}</td>
+                <td className="px-4 py-2 text-blue-500">{user.address.city}</td>
+                <td className="px-4 py-2 text-blue-500">{user.company.name}</td>
               </tr>
             ))}
           </tbody>
